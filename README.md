@@ -3,7 +3,7 @@
 ## Contents
 - **ROCStories.csv**: This file contains the ROCStories dataset, comprising five-sentence stories.
 - **roc_train.py**: A script used to fine-tune the pre-trained BERT model on the ROCStories dataset.
-- **src/**: Modified src file originally copied from baseline
+- **src/**: Modified src file originally copied from baseline.
 
 ## Baseline Model
 Our work builds upon the baseline model ReCo-RL. The details and source code for ReCo-RL can be found at this [link](https://github.com/JunjieHu/ReCo-RL/tree/master). Due to GitHub's file size limitations, this repository only includes source (`src`) files that have been modified for our project. For the rest of the files and detailed instructions on training and testing the model, please refer to the original ReCo-RL documentation and resources at the same link.
