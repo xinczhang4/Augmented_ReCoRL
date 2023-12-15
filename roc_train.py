@@ -5,7 +5,7 @@ import pandas as pd
 
 class RocStoriesDataset(Dataset):
     def __init__(self, filename, tokenizer, max_len):
-        self.df = pd.read_csv(filename)  # Assuming you have converted the dataset image to a CSV file
+        self.df = pd.read_csv(filename)
         self.tokenizer = tokenizer
         self.max_len = max_len
 
@@ -44,10 +44,10 @@ def train(model, dataloader, optimizer, device, epochs):
         print(f"Epoch {epoch+1}/{epochs} Loss: {total_loss/len(dataloader)}")
 
 # Parameters
-max_len = 128  # or a suitable maximum length for the sentences
+max_len = 128 
 batch_size = 64
 learning_rate = 2e-5
-epochs = 10  # or however many you deem necessary
+epochs = 2  # which already achieves a sufficiently small loss
 
 # Setup
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
