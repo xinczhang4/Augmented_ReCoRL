@@ -1,4 +1,4 @@
-# Augmented_ReCoRL
+# Augmented_ReCo-RL
 
 ## Contents
 - **ROCStories.csv**: This file contains the ROCStories dataset, comprising five-sentence stories.
