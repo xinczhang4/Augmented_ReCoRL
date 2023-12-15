@@ -16,7 +16,7 @@ Our work builds upon the baseline model ReCo-RL. The details and source code for
 
 ### Source Code Changes
 - **src/ Modifications**: 
-  - `vist_model.py`: Line 607 has been altered to utilize our unimodal-trained model as the decoder within the VIST model framework.
+  - `vist_model.py`: Line 609-613 has been altered to utilize our unimodal-trained BERT model as the decoder within the VIST model framework.
   - `scorer.py`: Line 18 (`Spice(), "SPICE"`) has been deleted due to version confliction.
 
 ## Training and Evaluation
