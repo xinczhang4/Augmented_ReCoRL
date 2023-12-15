@@ -604,7 +604,8 @@ class VistModel(nn.Module):
                     p.data.uniform_(-args.uniform_init, args.uniform_init)
         if 'coherence' in args.rl_reward:
             model.bert_tokenizer = BertTokenizer.from_pretrained(new_args.bert_vocab_path)
-            model.bert_nsp = BertForNextSentencePrediction.from_pretrained(new_args.bert_weight_path)
+            # model.bert_nsp = BertForNextSentencePrediction.from_pretrained(new_args.bert_weight_path)
+            model.bert_nsp = BertForNextSentencePrediction.from_pretrained(roc_trained)
             model.bert_nsp.eval()
 
         return model
