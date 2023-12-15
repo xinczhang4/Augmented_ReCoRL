@@ -604,8 +604,15 @@ class VistModel(nn.Module):
                     p.data.uniform_(-args.uniform_init, args.uniform_init)
         if 'coherence' in args.rl_reward:
             model.bert_tokenizer = BertTokenizer.from_pretrained(new_args.bert_vocab_path)
-            # model.bert_nsp = BertForNextSentencePrediction.from_pretrained(new_args.bert_weight_path)
-            model.bert_nsp = BertForNextSentencePrediction.from_pretrained(roc_trained)
+            model.bert_nsp = BertForNextSentencePrediction.from_pretrained(new_args.bert_weight_path)
+            
+            # Load the state dict previously saved with torch.save
+            state_dict = torch.load('../model.safetensors') # you may need to change the path
+            
+            # Load the state dict into the model
+            model.bert_nsp.load_state_dict(state_dict)
+            
+            # Set the model to evaluation mode
             model.bert_nsp.eval()
 
         return model
