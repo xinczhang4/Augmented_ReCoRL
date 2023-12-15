@@ -6,7 +6,7 @@
 - **src/**: Modified src file originally copied from baseline.
 
 ## Baseline Model
-Our work builds upon the baseline model ReCo-RL. The details and source code for ReCo-RL can be found at this [link](https://github.com/JunjieHu/ReCo-RL/tree/master). Due to GitHub's file size limitations, this repository only includes source (`src`) files that have been modified for our project. For the rest of the files and detailed instructions on training and testing the model, please refer to the original ReCo-RL documentation and resources at the same link.
+Our work builds upon the baseline model ReCo-RL. The details and source code for ReCo-RL can be found at this [link](https://github.com/JunjieHu/ReCo-RL/tree/master). Due to GitHub's file size limitations, this repository only includes source (`src`) files copied from original baseline git repo and have been slightly modified for our project. For the rest of the files and detailed instructions on training and testing the model, please refer to the original ReCo-RL documentation and resources at the same link.
 
 ## Modifications to ReCo-RL
 
