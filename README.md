@@ -20,6 +20,7 @@ Our work builds upon the baseline model ReCo-RL. The details and source code for
   - `scorer.py`: Line 18 (`Spice(), "SPICE"`) has been deleted due to version confliction.
 
 ## Training and Evaluation
+First, run roc_train.py to get the pre-trained BERT model fine-tuned on ROCStories dataset.
 To train and evaluate the modified model, please follow the instructions provided in the ReCo-RL documentation.
 Useful commands:
 Test: bash scripts/test.sh [GPU_id] (start from 0)
@@ -27,3 +28,6 @@ Outputs are saved at /outputs/rl/decode-beam5-len30.log
 Train: 
 - bash scripts/train_mle.sh [GPU_id] (start from 0)
 - bash scripts/train_rl.sh [GPU_id]
+
+## Notes:
+Due to missing of training file in baseline models, only train_mle could be done at this stage. All the analysis are executed based on this result.
