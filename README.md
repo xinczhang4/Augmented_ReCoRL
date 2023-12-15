@@ -21,3 +21,9 @@ Our work builds upon the baseline model ReCo-RL. The details and source code for
 
 ## Training and Evaluation
 To train and evaluate the modified model, please follow the instructions provided in the ReCo-RL documentation.
+Useful commands:
+Test: bash scripts/test.sh [GPU_id] (start from 0)
+Outputs are saved at /outputs/rl/decode-beam5-len30.log
+Train: 
+- bash scripts/train_mle.sh [GPU_id] (start from 0)
+- bash scripts/train_rl.sh [GPU_id]
